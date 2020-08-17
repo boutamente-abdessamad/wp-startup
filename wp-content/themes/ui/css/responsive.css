@@ -1,0 +1,116 @@
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+
+@media (min-width: 1380px) {
+    .container {
+        max-width: 1310px;
+    }
+}
+
+@media (max-width: 1380px) {
+    .container {
+        max-width: 1140px;
+    }
+    footer.vt-footer>.container>.row {
+      margin-right: 0;
+      margin-left: 0;
+    }
+    footer.vt-footer>.container>.row>.col, footer.vt-footer>.container>.row>[class*="col-"] {
+      padding-right: 40px;
+      padding-left: 40px;
+    }
+    footer.vt-footer .footer-col p {
+      font-size: 10px;
+      line-height: 21px;
+    }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 960px;
+  }
+  header.vt-header nav.vt-navbar .menu-box ul.menu-items .menu-item {
+    padding: 0 15px;
+  }
+  header.vt-header nav.vt-navbar .menu-box ul.menu-items .menu-item a {
+    font-size: 12px;
+  }
+  header.vt-header {
+    padding: 0 40px;
+  }
+  footer.vt-footer>.container>.row {
+    margin-right: -30px;
+    margin-left: -30px;
+  }
+  footer.vt-footer>.container>.row>.col, footer.vt-footer>.container>.row>[class*="col-"] {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  header.vt-header nav.vt-navbar {
+    padding: 0 0px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  header.vt-header nav.vt-navbar.navbar-lg{
+    display: none;
+  }
+  header.vt-header nav.vt-navbar.nabbar-sm{
+    display: flex;
+    padding: 0 15px;
+  }
+  footer.vt-footer {
+    text-align: center;
+  }
+  footer.vt-footer>.container>.row {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  footer.vt-footer>.container>.row>.col, footer.vt-footer>.container>.row>[class*="col-"] {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  footer.vt-footer .footer-col {
+    margin: 15px 0px;
+  }
+  footer.vt-footer>.container>.row>[class*="col-"]:not(:last-child) .footer-col::after {
+    display: none;
+  }
+  footer.vt-footer>.container>.row>[class*="col-"]:not(:last-child) .footer-col::before {
+    content: "";
+    border-bottom: 1px solid var(--main-white-color);
+    position: absolute;
+    width: 136px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+  }
+  header.vt-header {
+    padding: 0 0;
+  }
+  footer.vt-footer .footer-logo a {
+    justify-content: center;
+  }
+  footer.vt-footer .footer-col .footer-media {
+    justify-content: center;
+  }
+  footer.vt-footer .footer-title {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  header.vt-header nav.vt-navbar .menu-box ul.menu-items .menu-item {
+      padding-right: 0;
+  }
+  header.vt-header nav.vt-navbar {
+    height: 75px;
+  }
+}
